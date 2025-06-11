@@ -4,7 +4,7 @@ Este é um sistema completo de agendamento de cortes de cabelo e serviços de ba
 
 Permite que clientes visualizem horários disponíveis e agendem atendimentos com barbeiros de forma prática e rápida. Barbeiros podem definir seus horários disponíveis e gerenciar agendamentos.
 
-## ✨ Funcionalidades
+## 🎯 Funcionalidades
 
 - Cadastro e login de usuários com autenticação JWT
 - Perfis distintos: cliente e barbeiro
