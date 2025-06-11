@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Perfil</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Meu perfil</h2>
+    <img src="../img/logo-barbearia.png" alt="Logo Barbearia" class="logo" />
+
+    <h3>Trocar Número de Telefone:</h3>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" placeholder="Seu telefone">
+
+    <hr style="margin: 20px 0;" />
+
+    <h3>Trocar Senha:</h3>
+    <label for="senhaAtual">Senha atual:</label>
+    <input type="password" id="senhaAtual" placeholder="Senha atual" />
+
+    <label for="novaSenha">Nova senha:</label>
+    <input type="password" id="novaSenha" placeholder="Nova senha" />
+
+    <label for="confirmarSenha">Confirmar nova senha:</label>
+    <input type="password" id="confirmarSenha" placeholder="Confirmar nova senha" />
+
+    <button onclick="atualizarPerfil()">Salvar Alterações</button>
+  </div>
+
+  <script src="../js/perfil.js"></script>
+</body>
+</html>

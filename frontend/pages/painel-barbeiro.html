@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel do Barbeiro</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../img/logo-barbearia.png" alt="Logo da Barbearia" class="logo" />
+
+    <h1>Agendamentos</h1>
+
+    <nav class="acoes-barbearia">
+      <a href="perfil.html" class="btn" aria-label="Ir para Meu Perfil">Meu Perfil</a>
+      <a href="definir-horarios.html" class="btn" aria-label="Definir seus horários disponíveis">Definir Horários</a>
+    </nav>
+
+    <div class="seletor-data">
+      <label for="seletorData">Data: <strong id="dataAtual"></strong></label>
+      <input type="date" id="seletorData" onchange="carregarAgendamentos()" aria-label="Selecionar data dos agendamentos"/>
+    </div>
+
+    <h2 id="mensagemBoasVindas">Olá, Barbeiro!</h2>
+
+    <div id="containerAgendamentos">
+      <div class="tabela-wrapper">
+        <table class="tabela-agendamentos" aria-label="Tabela de agendamentos do dia">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Telefone</th>
+              <th>Hora</th>
+              <th>Serviço</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyAgendamentos">
+            <tr>
+              <td colspan="4" class="carregando">Carregando agendamentos...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/painel-barbeiro.js"></script>
+</body>
+</html>
+
+

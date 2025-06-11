@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Corte</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="../img/logo-barbearia.png" alt="Logo" class="logo">
+    <h1>Agendar Corte</h1>
+
+    <form id="formAgendamento">
+      <select id="barbeiro" required>
+        <option value="">Escolha o barbeiro:</option>
+      </select>
+
+      <input type="date" id="data" required>
+      <select id="horario" required>
+        <option value="">Escolha o horário:</option>
+      </select>
+
+      <select id="servico" required>
+        <option value="">Escolha o serviço:</option>
+        <option value="corte">Corte de cabelo</option>
+        <option value="barba">Barba</option>
+        <option value="combo">Corte + Barba</option>
+      </select>
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+
+    <p><a href="painel-cliente.html">Voltar à página inicial</a></p>
+  </div>
+
+  <script src="../js/agendar-corte.js"></script>
+</body>
+</html>

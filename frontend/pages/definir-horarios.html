@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Definir Horários</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <img src="../img/logo-barbearia.png" alt="Logo Barbearia" class="logo" />
+    <h1>Definir Horários</h1>
+
+    <label for="data">Selecione o dia:</label>
+    <input type="date" id="data" />
+
+    <label for="inicio">Horário de Início:</label>
+    <input type="time" id="inicio" />
+
+    <label for="fim">Último Horário:</label>
+    <input type="time" id="fim" />
+
+    <button onclick="salvarHorarios()">Salvar Horários</button>
+    <p><a href="painel-barbeiro.html">Voltar à página inicial</a></p>
+  </div>
+
+  <script src="../js/definir-horario.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* 
+ * style.css — Estilos principais da Barbearia 
+*/
+
+/* ----------------- RESET E BASE ----------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------- CONTAINER CENTRAL ----------------- */
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ----------------- LOGO ----------------- */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------------- TÍTULOS ----------------- */
+h1, h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px;
+  color: #222;
+}
+
+/* ----------------- INPUTS E SELECT ----------------- */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #666;
+  outline: none;
+}
+
+/* ----------------- BOTÕES ----------------- */
+button, .btn {
+  display: block;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: #333;
+}
+
+/* ----------------- LINKS ----------------- */
+p {
+  margin: 16px;
+  font-size: 15px;
+}
+
+p a {
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+/* ----------------- FORMULÁRIOS ----------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* ----------------- ACESSIBILIDADE ----------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ----------------- SELETOR DE DATA ----------------- */
+.seletor-data {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.seletor-data label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* ----------------- PAINEL DO BARBEIRO ----------------- */
+.tabela-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.tabela-agendamentos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: auto;
+  word-break: normal;
+  white-space: nowrap;
+}
+
+.tabela-agendamentos th, .tabela-agendamentos td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabela-agendamentos th {
+  background-color: #222;
+  color: #fff;
+}
+
+/* ----------------- PAINEL DO CLIENTE ----------------- */
+.card-agendamento {
+  background-color: #f9f9f9;
+  border-left: 5px solid #000;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-agendamento p {
+  margin: 4px 0;
+}
+
+/* ----------------- RESPONSIVIDADE ----------------- */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  input, label, select, button, .btn {
+    font-size: 13px;
+    padding: 11px;
+  }
+
+  .tabela-agendamentos {
+    font-size: 12px;
+  }
+
+  .tabela-agendamentos th, .tabela-agendamentos td {
+    padding: 6px;
+  }
+}
